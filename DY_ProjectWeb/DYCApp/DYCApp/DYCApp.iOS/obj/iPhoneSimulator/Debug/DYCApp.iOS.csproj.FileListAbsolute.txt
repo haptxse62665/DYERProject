@@ -1,0 +1,8 @@
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\DYCApp.iOS.csprojAssemblyReference.cache
+D:\DYERMoblieApp\DYCApp\DYCApp\DYCApp.iOS\obj\iPhoneSimulator\Debug\DYCApp.iOS.csproj.CoreCompileInputs.cache

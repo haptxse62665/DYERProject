@@ -1,0 +1,55 @@
+﻿@model IEnumerable<DYEREntity.EF.tbl_DYC>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        DYC Information
+    </h1>
+</section>
+<!-- Main content -->
+<section class="content container-fluid">
+    <div class="col-md-12">
+        <div class="box box-info">
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="exampleDYC" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Faculty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(x => item.tbl_Users.FullName)</td>
+                                <td>@Html.DisplayFor(x => item.tbl_Users.UserName)</td>
+                                <td>@Html.DisplayFor(x => item.tbl_Users.Email)</td>
+                                <td>@Html.DisplayFor(x => item.tbl_Users.PhoneNumber)</td>
+                                <td>@Html.DisplayFor(x => item.tbl_Faculty.FacultyName)</td>
+                            </tr>
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Faculty</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+

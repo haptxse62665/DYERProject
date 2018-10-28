@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Dashboard
+    </h1>
+</section>
+<!-- Main content -->
+<section class="content container-fluid">
+    <!-- TABLE: LATEST ORDERS -->
+    <div class="col-md-12">
+        <div class="box box-info">
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="table-responsive">
+                    <table class="table no-margin" id="example">
+                        <thead>
+                            <tr>
+                                <th>Name of Notification</th>
+                                <th>Create By</th>
+                                <th>Date Created</th>
+                                <th>OK Answer (blue color)</th>
+                                <th>NOT OK Answer (Orange color)</th>
+                                <th>Not Respond (red color)</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="pages/examples/invoice.html">Earthquake in Indonesia</a>
+                                </td>
+                                <td>Cikgu Imar</td>
+                                <td>2018-10-25</td>
+                                <td>13</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="pages/examples/invoice.html">Tsunami in Japan</a>
+                                </td>
+                                <td>Cikgu Wafi</td>
+                                <td>2018-10-24</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="pages/examples/invoice.html">Volcano in Nepal</a>
+                                </td>
+                                <td>Cikgu Firdaus</td>
+                                <td>2018-10-28</td>
+                                <td>13</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.table-responsive -->
+            </div>
+        </div>
+        <section class="content-header">
+            <h1>
+                Create Notification
+            </h1>
+        </section>
+        <div class="box box-info col-md-12">
+
+            <div class="row ">
+                <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Title</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Content Notification</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group col-md-4">
+                    <div class="form-group">
+                        <label>Hazard Level</label>
+                        <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                            <option selected="selected">Normal</option>
+                            <option>Check</option>
+                            <option>Dangerous</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>Country</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                        <option selected="selected">England</option>
+                        <option>Laos</option>
+                        <option>Korea</option>
+                        <option>Japan</option>
+                        <option>Mexico</option>
+                        <option>Australia</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Host Organization</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true"></select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Faculty</label>
+                    <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                        <option selected="selected">Art</option>
+                        <option>Business</option>
+                        <option>Engineering</option>
+                        <option>Science</option>
+                        <option>Health Science</option>
+                        <option>Academic</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="form-group col-md-4">
+                    <label>Date</label>
+                    <div class="input-group date">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-th"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label></label>
+                    <button type="button" class="btn btn-block btn-default">Send Notification</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.box -->
+</section>
+
+
+
+

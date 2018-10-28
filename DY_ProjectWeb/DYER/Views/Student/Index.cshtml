@@ -1,0 +1,67 @@
+﻿@model IEnumerable<DYEREntity.EF.tlb_Student>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+ <!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Student Information
+    </h1>
+</section>
+<!-- Main content -->
+<section class="content container-fluid">
+    <div class="col-md-12">
+        <div class="box box-info">
+            <!-- /.box-header -->
+            <div class="box-body">
+                <table id="exampleStudent" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Country</th>
+                            <th>Host Name</th>
+                            <th>Time-Start</th>
+                            <th>Time-Finish</th>
+                            <th>Type of DY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(x => item.tbl_Users.FullName)</td>
+                            <td>@Html.DisplayFor(x => item.tbl_Users.Id)</td>
+                            <td>@Html.DisplayFor(x => item.tbl_Users.Email)</td>
+                            <td>@Html.DisplayFor(x => item.tbl_Users.PhoneNumber)</td>
+                            <td>@Html.DisplayFor(x => item.tbl_Host.tbl_Country.CountryName)</td>
+                            <td>@Html.DisplayFor(x => item.tbl_Host.HostName)</td>
+                            <td>@Html.DisplayFor(x => item.TimeStart)</td>
+                            <td>@Html.DisplayFor(x => item.TimeFinish)</td>
+                            <td>@Html.DisplayFor(x => item.TypeOfDY)</td>
+                        </tr>
+                    }
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Country</th>
+                            <th>Host Name</th>
+                            <th>Time-Start</th>
+                            <th>Time-Finish</th>
+                            <th>Type of DY</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
